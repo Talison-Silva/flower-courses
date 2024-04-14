@@ -1,6 +1,6 @@
 # Atualizações / Updates
 
-- [] (melhorar o designer o dropdown)
+- [ ] (melhorar o designer o dropdown)
 
 ## Getting Started
 
