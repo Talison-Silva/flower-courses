@@ -1,6 +1,9 @@
 # Atualizações / Updates
 
-- [ ] (melhorar o designer o dropdown)
+- [ ] Dropdown - criar o component [{children} >] na pasta "@/components/dropdown/ *button.tsx* "
+- [ ] Dropdown - *button.tsx* - mudar dinâmicamente o dropdown para um dropright (talzez com uma prop?)
+- [ ] Dropdown - criar o "@/components/dropdown/group.tsx" para grupos de actions dentro do menu
+- [ ] Dropdown - deixar o menu mais parecido com o dropdown do *berry dashboard*
 
 ## Getting Started
 
