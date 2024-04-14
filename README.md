@@ -5,6 +5,14 @@
 - [ ] Dropdown - criar o "@/components/dropdown/group.tsx" para grupos de actions dentro do menu
 - [ ] Dropdown - deixar o menu mais parecido com o dropdown do *berry dashboard*
 
+# Flower-Courses
+
+Recentemente, tive algumas aulas sobre a construção de um backend baseado em microsserviços. Achei o conteúdo muito interessante e logo quis criar um projeto completo baseado nesse tipo de arquitetura. Após um certo tempo pensando em que tipo de site eu poderia desenvolver que necessitasse de um backend baseado em microsserviços, escolhi desenvolver um site de venda de cursos online, como o Alura. Assim, o projeto 'Flower-courses' teve sua origem. Claro, existem outros motivos para eu desenvolver esse projeto, mas esse é o motivo de maior peso.
+### outros motivos
+- até agora eu não tenho nenhum projeto no github que tenha foco no typescript , logo este será o primeiro
+- eu queria utilizar alguns outros conhecimentos que eu aprendi recentemente como: styled-components,storyboard e dentre outros...
+
+ 
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
