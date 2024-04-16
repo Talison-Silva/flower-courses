@@ -1,39 +1,31 @@
 import {ChevronRightIcon,ChevronDownIcon} from '@heroicons/react/24/outline';
-import {NAVIGATION} from '@/styled.ts';
-import {Dropdown} from '@/components/dropdown/index.tsx';
+import {NavigationBTTN} from '@/styled.ts';
+import {DroppedMenu} from './menu.tsx';
+import {useState} from 'react';
 
-import {useState,useRef} from 'react';
+const Chevron=({active})=>
+(
+	<>
+	{active?<ChevronDownIcon className="w-5 h-5 stroke-2"/>:<ChevronRightIcon className="w-5 h-5 stroke-2"/>}
+	</>
+)
 
 
+const NavigationBUTTON=({name,Icon,...props})=>{
+	const [drop,setDrop]=useState(false)
 
-const BTTN=({children})=>
-{
-	const [active,setActive]=useState(false);
-	const outRef=useRef([false,false]);
-
-	const disabled=()=>
-	{
-
-	}
+	props.onMouseOver=()=>
+	{setDrop(true)}
+	props.onMouseOut=()=>
+	{setDrop(false)}
 
 	return(
-		<Dropdown
-		active={active}
-
-		onMouseOver={()=>{setActive(true)}} 
-		onMouseOut={()=>{setActive(false)}}
-
-		toggle={
-			<NAVIGATION.ITM>
-			{children}
-			{active?<ChevronDownIcon className="w-5 h-5 stroke-2"/>:<ChevronRightIcon className="w-5 h-5 stroke-2"/>}
-			</NAVIGATION.ITM>
-		}
-		>
-			<li>one</li>
-			<li>two</li>
-		</Dropdown>
+		<NavigationBTTN {...props}>
+			<Icon className="w-6 h-6 stroke-2"/>
+			{name}	
+			<Chevron active={drop}/>
+		</NavigationBTTN>
 	)
 }
 
-export {BTTN};
+export {NavigationBUTTON}

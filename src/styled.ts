@@ -82,7 +82,7 @@ export const NAVIGATION=
 		align-items:center;
 	`,
 
-	ITM:styled.li`
+	ITM:styled.li`		
 		font-size:1.7125rem;
 		font-family:'Ubuntu Mono',sans-serif;		
 		font-weight: 400;
@@ -109,16 +109,58 @@ export const ROOT=styled.section`
 	height:100vh;
 `
 
+export const NavigationBTTN=styled.button`
+	position:relative;
+	font-size:1.7125rem;
+	font-family:'Ubuntu Mono',sans-serif;		
+	font-weight: 400;
+	letter-spacing:.125rem;
+	text-transform:capitalize;
+	padding:10px 15px 10px 15px;
+	border-radius:10px;
+	color:white;
+	user-select:none;
+	display:flex;
+	align-items:center;
+	gap:20px;
+
+	&:hover
+	{
+		background-color:rgba(255,255,255,.2125);
+	}
+`
+
 // --| dropdown |=================================================================|
 
 export const DropdownContainerSTYLD=styled.div`
-	position:relative;
 	width: min-content;
 	height: min-content;
 `
 
+export const DropdownButtonSTYLD=styled.button`
+	position:relative;
+	font-size:1.7125rem;
+	font-family:'Ubuntu Mono',sans-serif;		
+	font-weight: 400;
+	letter-spacing:.125rem;
+	text-transform:capitalize;
+	padding:10px 15px 10px 15px;
+	border-radius:10px;
+	color:white;
+	user-select:none;
+	display:flex;
+	align-items:center;
+	gap:20px;
+
+	&:hover
+	{
+		background-color:rgba(255,255,255,.2125);
+	}
+`
+
 export const DropdownMenuSTYLD=styled.ul`
 	position:absolute;
+	left:0;top:100%;
 	width:250px;
 	min-height:40px;
 	padding:15px 0 15px 0;
@@ -128,6 +170,76 @@ export const DropdownMenuSTYLD=styled.ul`
 
 	display:flex;
 	flex-direction:column;
+`
+
+export const DropdownItemSTYLD=styled.li`
+	width:100%;
+	height:40px;
+	color:black;
+
+	display:flex;
+	justify-content:space-between;
+`
+
+// --| dropped |=================================================================|
+
+// Dropped-Container
+export const DroppedCNTNR=styled.div`
+	width: min-content;
+	height: min-content;	
+`
+
+// Dropped-Button
+export const DroppedBTTN=styled.div`
+	position:relative;
+	width: min-content;
+	height: min-content;
+`
+
+// Dropped-Float
+export const DroppedFLT=styled.div`
+	position:absolute;
+	width: min-content;
+	height: min-content;
+`
+
+// Dropped-Menu
+export const DroppedMN=styled.div`
+	//position:relative;	
+	width:250px;
+	min-height:40px;
+	padding:15px 0 15px 0;
+	border-radius:10px;
+	box-shadow:0px 0px 15px #666666;
+	background-color:white;
+
+	display:flex;
+	flex-direction:column;
+`
+
+// Dropped-Item
+export const DroppedITM=styled.button`
+	width:100%;
+	position:relative;
+	font-size:1.5125rem;
+	font-family:'Ubuntu Mono',sans-serif;		
+	font-weight: 400;
+	letter-spacing:.125rem;
+	text-transform:capitalize;
+	padding:10px 15px 10px 15px;
+	border-radius:10px;
+	color:black;
+	user-select:none;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+	&:hover
+	{
+		background-color:#f5ebff;
+		color:#a245ff;
+		stroke:#f5ebff;
+	}
 `
 
 // --| generic |==================================================================|
