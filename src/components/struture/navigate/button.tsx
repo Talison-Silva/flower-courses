@@ -1,5 +1,5 @@
 import {ChevronRightIcon,ChevronDownIcon} from '@heroicons/react/24/outline';
-import {NavigationBTTN} from '@/styled.ts';
+import {NavigationBTTN} from '@/components/styled/index.ts';
 import {DroppedMenu} from './menu.tsx';
 import {useState} from 'react';
 

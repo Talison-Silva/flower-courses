@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import {Search} from './search.tsx';
-import {HEADER,RECTBTTN,GROUP,PURPLEBTTN,COLORSBUTTON,COLORGROUP} from '@/styled.ts';
+import {
+	HEADER,
+	RECTBTTN,
+	GROUP,
+	PURPLEBTTN,
+	COLORSBUTTON,
+	COLORGROUP
+} from '@/components/styled/index.ts';
+
 import {
 	BellAlertIcon,
 	Cog8ToothIcon,
@@ -32,21 +40,13 @@ const Header=()=>
 			<Search/>
 
 			<GROUP>
-				<RECTBTTN children={
-					<ChatBubbleLeftIcon/>
-				} className="hover:bg-[#ff80d0] bg-[#ffb8e5] text-[#ff80d0]"/>
+				<RECTBTTN children={<ChatBubbleLeftIcon/>} className="hover:bg-[#ff80d0] bg-[#ffb8e5] text-[#ff80d0]"/>
 
-				<RECTBTTN children={
-					<LanguageIcon/>
-				} className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>
+				<RECTBTTN children={<LanguageIcon/>} className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>
 
-				<RECTBTTN children={
-					<BellAlertIcon/>
-				} className="hover:bg-[#ff80d0] bg-[#ffb8e5] text-[#ff80d0]"/>
+				<RECTBTTN children={<BellAlertIcon/>} className="hover:bg-[#ff80d0] bg-[#ffb8e5] text-[#ff80d0]"/>
 
-				 <RECTBTTN children={
-				 	<ArrowsPointingOutIcon/>
-				 } className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>
+				 <RECTBTTN children={<ArrowsPointingOutIcon/>} className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>
 
 				<COLORGROUP>
 					<Circle/>
@@ -56,20 +56,6 @@ const Header=()=>
 		</HEADER>
 	)
 }
-
-
-/*
-<ContainerHeader>
-	<Tools>
-		<img src="./flower.png" width="50" height="50"/>
-		<SearchContainer>									
-		</SearchContainer>
-		<Circle/>
-		<RainbowBTTN/>
-	</Tools>
-	<Navigate/>
-</ContainerHeader>
-*/
 
 
 export {Header}

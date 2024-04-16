@@ -1,4 +1,4 @@
-import {DroppedBTTN} from '@/styled.ts';
+import {DroppedBTTN} from '@/components/styled/index.ts';
 import {DroppedMenu} from './menu.tsx';
 import {useState} from 'react';
 

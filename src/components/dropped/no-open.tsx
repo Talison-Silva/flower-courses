@@ -1,4 +1,4 @@
-import {DroppedBTTN,DroppedITM} from '@/styled.ts'
+import {DroppedBTTN,DroppedITM} from '@/components/styled/index.ts'
 
 const DroppedNoOpen=({name,Icon,method})=>{	
 	return(

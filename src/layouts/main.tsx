@@ -1,7 +1,7 @@
 "use client";
 import { Header } from '@/components/struture/header/index.tsx';
 import { Navigate } from '@/components/struture/navigate/index.tsx';
-import { ROOT } from '@/styled.ts';
+import { ROOT } from '@/components/styled/index.ts';
 
 
 const Main=({children})=>

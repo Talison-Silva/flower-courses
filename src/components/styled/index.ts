@@ -181,6 +181,7 @@ export const DropdownItemSTYLD=styled.li`
 	justify-content:space-between;
 `
 
+
 // --| dropped |=================================================================|
 
 // Dropped-Container
@@ -196,21 +197,19 @@ export const DroppedBTTN=styled.div`
 	height: min-content;
 `
 
-// Dropped-Float
+// Dropped-Float-Menu
 export const DroppedFLT=styled.div`
 	position:absolute;
 	width: min-content;
 	height: min-content;
+	box-shadow:0px 0px 15px #666666;
 `
 
 // Dropped-Menu
 export const DroppedMN=styled.div`
-	//position:relative;	
 	width:250px;
 	min-height:40px;
 	padding:15px 0 15px 0;
-	border-radius:10px;
-	box-shadow:0px 0px 15px #666666;
 	background-color:white;
 
 	display:flex;
@@ -243,6 +242,7 @@ export const DroppedITM=styled.button`
 `
 
 // --| generic |==================================================================|
+
 
 export const GROUP=styled.div`
 	min-width: min-content;

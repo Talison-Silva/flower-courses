@@ -2,7 +2,7 @@ import {Dropped} from '@/components/dropped/index.tsx';
 import {HomeIcon} from '@heroicons/react/24/outline';
 import {HomeSchema} from '@/utils/navigation.ts';
 import {NavigationBUTTON} from './button.tsx';
-import {NAVIGATION} from '@/styled.ts';
+import {NAVIGATION} from '@/components/styled/index.ts';
 
 
 const Navigate=()=>

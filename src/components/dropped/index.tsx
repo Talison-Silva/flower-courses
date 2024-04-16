@@ -1,4 +1,4 @@
-import {DroppedCNTNR,DroppedITM} from '@/styled.ts';
+import {DroppedCNTNR,DroppedITM} from '@/components/styled/index.ts';
 import {DroppedNoOpen} from './no-open.tsx';
 import {DroppedOpen} from './open.tsx';
 import {DroppedToggle} from './toggle.tsx';
@@ -6,52 +6,37 @@ import {DroppedToggle} from './toggle.tsx';
 
 const Dropped=({schema,toggle,menu,children})=>
 {
-	if(toggle)
-	{
-		return <DroppedToggle toggle={toggle} schema={schema}/>;
-	}
+	var response=[];
 
-	else if(menu && schema)
-	{				
-		return(
-			<>
-			{
-				schema.map(entry => {					
-					if(entry.menu){return <DroppedOpen name={entry.name} Icon={entry.icon} schema={entry.menu}/>}//schema
-					else{return <DroppedNoOpen name={entry.name} method={entry.method} Icon={entry.icon}/>}
-				})
+	if(toggle){return <DroppedToggle toggle={toggle} schema={schema}/>}
+
+	if(menu)
+	{			
+		schema.map(entry =>
+		{
+			if(entry.menu){
+				response.push(<DroppedOpen name={entry.name} Icon={entry.icon} schema={entry.menu}/>)
+			}else{
+				response.push(<DroppedNoOpen name={entry.name} method={entry.method} Icon={entry.icon}/>)
 			}
-			</>
-		)
+		})
+
+		return(response)
 	}
 }
 
+
 /*
-
-
-const data=Object.entries(schema)
 return(
-	<DroppedCNTNR>
+	<>
 	{
-		Object.entries(
-			schema
-		).map(entry => {
-			const [indx,itm]=entry				
-			console.log('itm',itm)
-			if(itm.menu)
-			{
-				return <DroppedOpen children={children}/>
-			}
-			else
-			{
-				return <DroppedNoOpen children={children}/>
-			}
+		schema.map(entry => {
+			if(entry.menu){return <DroppedOpen name={entry.name} Icon={entry.icon} schema={entry.menu}/>}
+			else{return <DroppedNoOpen name={entry.name} method={entry.method} Icon={entry.icon}/>}
 		})
 	}
-	</DroppedCNTNR>
+	</>
 )
-
-
 */
 
 export { Dropped };

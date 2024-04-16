@@ -1,4 +1,4 @@
-import { SEARCH } from '@/styled.ts';
+import { SEARCH } from '@/components/styled/index.ts';
 
 const Search=()=>
 {

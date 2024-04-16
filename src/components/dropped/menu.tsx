@@ -1,13 +1,11 @@
-import {DroppedMN,DroppedFLT} from '@/styled.ts';
+import {DroppedMN,DroppedFLT} from '@/components/styled/index.ts';
 import {Dropped} from './index.tsx';
 
 const DroppedMenu=({schema,down=true,...props})=>
 {
 	return(
 		<DroppedFLT className={down?'left-0 top-full':'top-0 left-full'}>
-			<DroppedMN>
-				<Dropped schema={schema} menu={true}/>
-			</DroppedMN>
+			<DroppedMN children={<Dropped schema={schema} menu={true}/>}/>
 		</DroppedFLT>
 	)
 }
