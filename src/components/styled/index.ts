@@ -207,7 +207,7 @@ export const DroppedFLT=styled.div`
 
 // Dropped-Menu
 export const DroppedMN=styled.div`
-	width:250px;
+	min-width:300px;
 	min-height:40px;
 	padding:15px 0 15px 0;
 	background-color:white;

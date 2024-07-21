@@ -30,3 +30,116 @@ export const HomeSchema=
 		]
 	}
 ]
+
+export const ProgrammingSchema=
+[
+	{
+		name:'language',
+		icon:HomeIcon,
+		menu:[
+			{
+				name:'javascript',
+				icon:HomeIcon,
+				method:()=>{alert('javascript')}
+			},
+			{
+				name:'typescript',
+				icon:HomeIcon,
+				method:()=>{alert('typescript')}
+			},
+			{
+				name:'rust',
+				icon:HomeIcon,
+				method:()=>{alert('rust')}
+			},			
+			{
+				name:'python',
+				icon:HomeIcon,
+				method:()=>{alert('python')}
+			},
+			{
+				name:'c-family',
+				icon:HomeIcon,
+				menu:[
+					{
+						name:'c',
+						icon:HomeIcon,
+						method:()=>{alert('c')}
+					},
+					{
+						name:'c++',
+						icon:HomeIcon,
+						method:()=>{alert('c++')}
+					},
+					{
+						name:'c#',
+						icon:HomeIcon,
+						method:()=>{alert('c#')}
+					}
+				]
+				
+			},
+		]
+	},
+	{
+		name:'frameworks',
+		icon:HomeIcon,		
+		menu:[
+			{
+				name:'reactjs',
+				icon:HomeIcon,
+				method:()=>{alert('reactjs')}
+			},
+			{
+				name:'nextjs',
+				icon:HomeIcon,
+				method:()=>{alert('nextjs')}
+			},
+			{
+				name:'vuejs',
+				icon:HomeIcon,
+				method:()=>{alert('vuejs')}
+			},
+			{
+				name:'nuxtjs',
+				icon:HomeIcon,
+				method:()=>{alert('nuxtjs')}
+			},
+			{
+				name:'nodejs',
+				icon:HomeIcon,
+				method:()=>{alert('nodejs')}
+			}
+		]
+	}
+]
+
+export const DesignerSchema=
+[
+	{
+		name:'home',
+		icon:HomeIcon,
+		method:()=>{alert('home')}
+	},
+	{
+		name:'home',
+		icon:HomeIcon,
+		method:()=>{alert('home')}
+	},
+	{
+		name:'home',
+		icon:HomeIcon,
+		menu:[
+			{
+				name:'home',
+				icon:HomeIcon,
+				method:()=>{alert('home')}
+			},
+			{
+				name:'home',
+				icon:HomeIcon,
+				method:()=>{alert('home')}
+			}
+		]
+	}
+]

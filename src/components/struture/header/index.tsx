@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import {Search} from './search.tsx';
 import {
 	HEADER,
@@ -16,15 +15,8 @@ import {
 	ArrowsPointingOutIcon,
 	ChatBubbleLeftIcon,
 } from '@heroicons/react/24/outline';
+import {Account} from './account.tsx';
 
-
-
-const Circle=styled.div`
-	width:35px;
-	height:35px;
-	border-radius:50%;
-	background-color: #757cff;
-`
 
 const Header=()=>
 {
@@ -46,12 +38,9 @@ const Header=()=>
 
 				<RECTBTTN children={<BellAlertIcon/>} className="hover:bg-[#ff80d0] bg-[#ffb8e5] text-[#ff80d0]"/>
 
-				 <RECTBTTN children={<ArrowsPointingOutIcon/>} className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>
+				 <RECTBTTN children={<ArrowsPointingOutIcon/>} className="hover:bg-[#757cff] bg-[#d4d6ff] text-[#757cff]"/>				
 
-				<COLORGROUP>
-					<Circle/>
-					<Cog8ToothIcon className="h-8 w-8"/>
-				</COLORGROUP>
+				 <Account/>
 			</GROUP>
 		</HEADER>
 	)
